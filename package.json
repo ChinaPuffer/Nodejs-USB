@@ -1,0 +1,20 @@
+{
+  "name": "device",
+  "version": "1.0.0",
+  "description": "Nodejs addon to read a device using a C++ Wrapper",
+  "main": "./build/Release/device.node",
+  "scripts": {
+    "preinstall": "node-gyp rebuild",
+    "preuninstall": "rm -rf build/*"
+  },
+  "repository": "",
+  "readmeFilename": "README.md",
+  "author": "",
+  "license": "",
+  "readme": "Node [Addon](http://nodejs.org/api/addons.html) Module\n====================\n\nExploring the technology used to develop a C++ wrapped [Addon](http://nodejs.org/api/addons.html) Module for [Node js](http://nodejs.org/).\n\nTechnology Stack\n================\n \n* Operating System : Mac OS 10.8 ( Mountain Lion )\n* Node Version : v0.10.0 \n* Node Package Manager ( NPM ) : v1.2.14 \n* Node-GYP : v0.9.5\n* V8 : v3.17.15\n    \n\n\n\n\t\t    \n    \n    \n \n \n \n \n \n \n \n    \n\n\n\n\n\n\n\n    \n    \n    \n\n\n\n\n\n\n\n\n\n\n",
+  "_id": "fruit@1.0.0",
+  "dist": {
+    "shasum": "f73716913816aec20895954aa5a169e2c9da535e"
+  },
+  "_from": "../node-usb/"
+}
