@@ -1,0 +1,1 @@
+cmd_Release/device.node := ./gyp-mac-tool flock ./Release/linker.lock c++ -shared -Wl,-search_paths_first -mmacosx-version-min=10.5 -arch x86_64 -L./Release -install_name @rpath/device.node  -o Release/device.node Release/obj.target/device/src/device.o Release/obj.target/device/src/device_wrap.o -undefined dynamic_lookup -lusb-1.0
