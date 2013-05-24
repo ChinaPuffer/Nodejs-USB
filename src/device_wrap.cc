@@ -61,18 +61,28 @@ Handle<Value> Device::InitDevice(const Arguments& args) {
   if ( retVal < 0 ) {
        
     ptrMessage = "Failed to initialise the library";
-   
+       
    } else {
    
     ptrMessage = "Library successfully initialised"; 
         
-  } 
+  }
+  
+  // following is a crude approach and assumes that the device exists 
  
   ptrDeviceHandle = libusb_open_device_with_vid_pid( ptrCtx, vendor_id, product_id );
   
+  if (ptrDeviceHandle == NULL ) {
+  
+    Local<String> name = String::New("Error trying to find the device");
+
+    return scope.Close(name);
+    
+  }
+  
+
   devPtr = libusb_get_device( ptrDeviceHandle );
-  
-  
+    
   retVal = libusb_get_device_descriptor( devPtr, &desc);
   
   if ( retVal < 0 ) {
