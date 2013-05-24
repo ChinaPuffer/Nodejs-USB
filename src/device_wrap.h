@@ -24,10 +24,8 @@ class Device : public node::ObjectWrap {
   
   static void Init(Handle<Object> exports);  
   static Handle<Value> New(const Arguments& args);  
-  static Handle<Value> GetName(const Arguments& args);
-  
-  libusb_device *ptrDev;
-     
+  static Handle<Value> InitDevice(const Arguments& args);
+      
 protected:
        
 };

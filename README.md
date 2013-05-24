@@ -24,7 +24,7 @@ Thanks
 Licence
 =======
 
-
+[See Licence](https://github.com/dtinblack/Nodejs-USB/blob/master/LICENSE)
 
 
 		    

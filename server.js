@@ -14,7 +14,7 @@ server.on('request', function(req, res) {
   switch(url_parts.pathname) {
     case '/':
     case '/index.html':
-      res.write('<html><body>' + usb.getName() + '</body></html>');
+      res.write('<html><body>' + usb.initDevice( 0x05ac, 0x0237 ) + '</body></html>');
       break;
     default:
       res.write('Unknown path: ' + JSON.stringify(url_parts));
