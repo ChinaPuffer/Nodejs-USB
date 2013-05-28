@@ -12,7 +12,7 @@ Technology Stack
 * Node Package Manager ( NPM ) : v1.2.14 
 * Node-GYP : v0.9.5
 * V8 : v3.17.15
-* C Library: libusb
+* [I/OKit](https://developer.apple.com/library/mac/#documentation/devicedrivers/conceptual/IOKitFundamentals/Introduction/Introduction.html)
 * HTML5, Javascript, CSS
 
 

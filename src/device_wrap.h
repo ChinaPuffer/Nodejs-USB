@@ -3,11 +3,11 @@
 
 #include <node.h>
 
-extern "C" {
-
-#include <libusb.h> 
- 
-}
+#include<CoreFoundation/CoreFoundation.h>
+#include <IOKit/IOKitLib.h>
+#include <IOKit/IOMessage.h>
+#include <IOKit/IOCFPlugIn.h>
+#include <IOKit/usb/IOUSBLib.h>
 
 using namespace v8;
   
