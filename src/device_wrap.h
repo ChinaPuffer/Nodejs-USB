@@ -10,13 +10,11 @@ extern "C" {
 }
 
 using namespace v8;
-
-
   
 class Device : public node::ObjectWrap {
  
  public:
-  
+   
     Device();
   ~Device();
   
