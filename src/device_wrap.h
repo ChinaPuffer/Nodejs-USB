@@ -4,10 +4,19 @@
 #include <node.h>
 
 #include<CoreFoundation/CoreFoundation.h>
-#include <IOKit/IOKitLib.h>
-#include <IOKit/IOMessage.h>
-#include <IOKit/IOCFPlugIn.h>
+
+
+#include <IOKit/IOKitLib.h> // get rid
+#include <IOKit/IOMessage.h> // get rid
+#include <IOKit/IOCFPlugIn.h> // get rid
+
+
 #include <IOKit/usb/IOUSBLib.h>
+#include <IOKit/usb/USBSpec.h>
+#include <IOKit/hid/IOHIDManager.h>
+
+#include<node_object_wrap.h> // added to work around the emit problem
+
 
 using namespace v8;
   
